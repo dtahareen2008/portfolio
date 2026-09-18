@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of D. Tahareen, a 2nd-year, 3rd-semester Computer Science and Engineering student. Showcasing skills, projects, Git/GitHub experience, and education.">
+  <meta name="author" content="D. Tahareen">
+  <title>D. Tahareen | Computer Science Student Portfolio</title>
+  
+  <!-- Google Fonts: Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Tahareen</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#github-achievements" class="nav-link">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Close Button for Mobile Drawer -->
+        <button class="nav-close" id="nav-close" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Header Actions: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="main">
+
+    <!-- 1. HOME / HERO SECTION -->
+    <section class="home section" id="home">
+      <div class="home-container container grid">
+        <div class="home-content">
+          <div class="home-greeting">
+            <span class="status-indicator"></span>
+            <span class="greeting-text">Welcome to my portfolio</span>
+          </div>
+
+          <h1 class="home-title">
+            Hi, I'm <span class="gradient-text">D. Tahareen</span>
+          </h1>
+
+          <h2 class="home-subtitle">
+            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </h2>
+
+          <p class="home-description">
+            A 2nd-year, 3rd-semester Computer Science &amp; Engineering student passionate about
+            programming, web development, software creation, and exploring new technologies.
+            Driven to build practical projects and continually strengthen my technical foundation.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="home-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="home-social">
+            <span class="social-label">Connect:</span>
+            <!-- NOTE: Update these URLs with your actual profile links -->
+            <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:dtahareen2008@gmail.com" class="social-icon" aria-label="Send Email" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Card Widget -->
+        <div class="home-visual">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-buttons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-title">tahareen.json</div>
+              <div class="window-lang">JSON</div>
+            </div>
+            <pre class="window-body"><code><span class="c-keyword">{</span>
+  <span class="c-prop">"name"</span>: <span class="c-string">"D. Tahareen"</span>,
+  <span class="c-prop">"role"</span>: <span class="c-string">"CSE Student"</span>,
+  <span class="c-prop">"year"</span>: <span class="c-number">2</span>,
+  <span class="c-prop">"semester"</span>: <span class="c-number">3</span>,
+  <span class="c-prop">"focus"</span>: [
+    <span class="c-string">"Programming"</span>,
+    <span class="c-string">"Web Development"</span>,
+    <span class="c-string">"Software Development"</span>
+  ],
+  <span class="c-prop">"skills"</span>: [
+    <span class="c-string">"C"</span>, <span class="c-string">"Java"</span>, <span class="c-string">"C++"</span>,
+    <span class="c-string">"HTML"</span>, <span class="c-string">"CSS"</span>, <span class="c-string">"Git"</span>
+  ],
+  <span class="c-prop">"status"</span>: <span class="c-string">"Open to learning &amp; building"</span>
+<span class="c-keyword">}</span></code></pre>
+            <div class="window-footer">
+              <span class="branch-tag"><i class="fa-solid fa-code-branch"></i> main</span>
+              <span class="status-tag"><i class="fa-solid fa-check"></i> Ready to code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know who I am and what fuels my curiosity in technology</p>
+        </div>
+
+        <div class="about-container grid">
+          <!-- Bio Narrative -->
+          <div class="about-text-content">
+            <p class="about-paragraph">
+              My name is <strong>D. Tahareen</strong>. I am currently in my <strong>2nd year, 3rd semester</strong>
+              pursuing a Bachelor's degree in <strong>Computer Science and Engineering</strong>.
+            </p>
+            <p class="about-paragraph">
+              I have a strong enthusiasm for <strong>programming</strong>, <strong>web development</strong>, and
+              <strong>software engineering</strong>. Exploring modern technologies and understanding how software
+              works under the hood inspires me to write clean and purposeful code.
+            </p>
+            <p class="about-paragraph">
+              I actively enjoy building small projects to put classroom theories into practice. Whether developing
+              graphics utilities in C or crafting responsive user interfaces for the web, my goal is to continuously
+              refine my problem-solving abilities, master core data structures, and prepare for impactful engineering opportunities.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Solid grounding in C, C++, and Java programming</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Hands-on experience with version control (Git &amp; GitHub)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle highlight-icon"></i>
+                <span>Enthusiastic about collaborative software development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Information Cards -->
+          <div class="about-cards-grid">
+            <div class="info-card">
+              <div class="card-icon-wrap">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="card-title">Academic Level</h3>
+              <p class="card-value">2nd Year, 3rd Semester</p>
+              <p class="card-note">B.E. / B.Tech in CSE</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon-wrap">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="card-title">Core Interests</h3>
+              <p class="card-value">Software &amp; Web Dev</p>
+              <p class="card-note">Algorithms &amp; Tech Systems</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon-wrap">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <h3 class="card-title">Current Focus</h3>
+              <p class="card-value">Data Structures</p>
+              <p class="card-note">Problem Solving &amp; Projects</p>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon-wrap">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h3 class="card-title">Ambition</h3>
+              <p class="card-value">Software Engineer</p>
+              <p class="card-note">Building real-world solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A breakdown of the programming languages, tools, and foundations I practice</p>
+        </div>
+
+        <div class="skills-wrapper grid">
+          
+          <!-- Skill Category: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <p class="category-desc">Core logic and application programming</p>
+              </div>
+            </div>
+
+            <div class="skill-items-grid">
+              <div class="skill-badge">
+                <div class="badge-icon c-lang"><i class="fa-solid fa-c"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">C Programming</span>
+                  <span class="badge-desc">Pointers, memory, modular coding</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon java-lang"><i class="fa-brands fa-java"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">Java</span>
+                  <span class="badge-desc">OOP concepts, classes, inheritance</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon cpp-lang"><i class="fa-solid fa-file-code"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">C++</span>
+                  <span class="badge-desc">Object-oriented programming, STL basics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Web Technologies -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <p class="category-desc">Crafting responsive and interactive web interfaces</p>
+              </div>
+            </div>
+
+            <div class="skill-items-grid">
+              <div class="skill-badge">
+                <div class="badge-icon html-tech"><i class="fa-brands fa-html5"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">HTML5</span>
+                  <span class="badge-desc">Semantic structure, modern layouts</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon css-tech"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">CSS3</span>
+                  <span class="badge-desc">Flexbox, Grid, animations, responsive design</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon js-tech"><i class="fa-brands fa-js"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">JavaScript</span>
+                  <span class="badge-desc">DOM manipulation, event handling, logic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3 class="category-title">Tools &amp; Environment</h3>
+                <p class="category-desc">Modern developer tooling and workflow</p>
+              </div>
+            </div>
+
+            <div class="skill-items-grid">
+              <div class="skill-badge">
+                <div class="badge-icon git-tool"><i class="fa-brands fa-git-alt"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">Git &amp; GitHub</span>
+                  <span class="badge-desc">Commits, branching, PRs, version control</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon vscode-tool"><i class="fa-solid fa-terminal"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">VS Code</span>
+                  <span class="badge-desc">Primary IDE, debugging, GitLens workflow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category: Computer Science Foundations -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3 class="category-title">Core Computer Science</h3>
+                <p class="category-desc">Fundamental concepts and algorithmic approach</p>
+              </div>
+            </div>
+
+            <div class="skill-items-grid">
+              <div class="skill-badge">
+                <div class="badge-icon ds-concept"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">Basic Data Structures</span>
+                  <span class="badge-desc">Arrays, Linked Lists, Stacks, Queues</span>
+                </div>
+              </div>
+
+              <div class="skill-badge">
+                <div class="badge-icon ps-concept"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="badge-info">
+                  <span class="badge-name">Problem Solving</span>
+                  <span class="badge-desc">Analytical reasoning, logic formulation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Hands-on applications demonstrating practical problem solving and coding</p>
+        </div>
+
+        <div class="projects-grid grid">
+
+          <!-- Project 1: 2D-Graphics-Editor (Real GitHub Repository) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <span class="project-category">C Programming</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">2D-Graphics-Editor</h3>
+              <p class="project-description">
+                A modular 2D graphics canvas rendering application engineered in <strong>C</strong>. Implements an 80&times;40 character
+                matrix buffer enabling users to generate and manipulate shapes including rectangles, circles, lines, and triangles
+                via coordinate geometry and trigonometric formulas.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Circle trigonometry &amp; coordinate line drawing algorithms</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Menu-driven terminal interface with 7 drawing/clearing actions</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> 2D character matrix buffer manipulation &amp; area deletion</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">2D Arrays</span>
+                <span class="tag">Coordinate Math</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">CLI</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/dtahareen2008/2D-Graphics-Editor" target="_blank" rel="noopener noreferrer" class="project-btn" title="View 2D-Graphics-Editor on GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>Source Code</span>
+              </a>
+              <span class="project-status-badge completed">
+                <i class="fa-solid fa-circle-check"></i> Completed
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 2: Simple-Line-Editor-C (Real GitHub Repository) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-align-left"></i>
+              </div>
+              <span class="project-category">Data Structures &amp; C</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Simple-Line-Editor-C</h3>
+              <p class="project-description">
+                A collaborative command-line text line editor developed in <strong>C</strong>. Employs an <strong>Array of Strings</strong>
+                data structure to provide core document manipulation capabilities including inserting lines, deleting lines, and rendering
+                text documents in the console.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Core commands: Insert Line, Delete Line, and Display Document</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Efficient Array of Strings buffer representation in memory</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Collaborative team development with clean modular design</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">C Programming</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Array of Strings</span>
+                <span class="tag">Team Project</span>
+                <span class="tag">GCC</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/dtahareen2008/Simple-Line-Editor-C" target="_blank" rel="noopener noreferrer" class="project-btn" title="View Simple-Line-Editor-C on GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>Source Code</span>
+              </a>
+              <span class="project-status-badge completed">
+                <i class="fa-solid fa-circle-check"></i> Completed
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Dustbin System (IoT & Embedded Systems) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <span class="project-category">IoT &amp; Embedded Systems</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Smart Dustbin System</h3>
+              <p class="project-description">
+                An automated IoT and embedded systems project designed to modernize waste disposal and sanitation.
+                Incorporates sensor integration (ultrasonic/infrared) with a microcontroller to detect human proximity,
+                automate touchless lid opening, and monitor garbage fill levels for timely clearance.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Touchless automated lid opening via distance sensors</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Real-time waste level monitoring to prevent overflow</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Embedded C logic for sensor-servo actuation</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Sensors</span>
+                <span class="tag">Microcontrollers</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" class="project-btn" title="View Project on GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>Project Info</span>
+              </a>
+              <span class="project-status-badge completed">
+                <i class="fa-solid fa-circle-check"></i> Completed
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 4: Activity-1-Dev-Environment-setup (Real GitHub Repository) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-badge">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <span class="project-category">Dev Tools &amp; Workflow</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Activity-1-Dev-Environment-setup</h3>
+              <p class="project-description">
+                A hands-on developer environment and version control collaboration project. Focuses on setting up an optimized
+                C and web development workflow using <strong>VS Code</strong>, <strong>GitLens</strong>, and <strong>Live Share</strong>,
+                demonstrating paired programming and atomic commit practices.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Paired programming with Live Share &amp; GitHub collaboration</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Deep inspection of commit heatmaps &amp; line blame via GitLens</div>
+                <div class="p-feature"><i class="fa-solid fa-check"></i> Feature branching, merge workflows, and repository structuring</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">Git &amp; GitHub</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">GitLens</span>
+                <span class="tag">Live Share</span>
+                <span class="tag">Collaboration</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/dtahareen2008/Activity-1-Dev-Environment-setup" target="_blank" rel="noopener noreferrer" class="project-btn" title="View Activity-1 on GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>Source Code</span>
+              </a>
+              <span class="project-status-badge completed">
+                <i class="fa-solid fa-circle-check"></i> Completed
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 5: Upcoming Project Placeholder -->
+          <article class="project-card future-project-card">
+            <div class="project-card-header">
+              <div class="project-icon-badge pulse-badge">
+                <i class="fa-solid fa-code-merge"></i>
+              </div>
+              <span class="project-category">Upcoming Project</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Full-Stack Web Application</h3>
+              <p class="project-description">
+                Currently designing and developing a dynamic web application. Aimed at integrating responsive frontend
+                interfaces (HTML, CSS, modern JavaScript) with backend logic, database management, and API handling.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="p-feature"><i class="fa-solid fa-clock"></i> In active development for 3rd semester milestones</div>
+                <div class="p-feature"><i class="fa-solid fa-clock"></i> Exploring backend integration and API connectivity</div>
+                <div class="p-feature"><i class="fa-solid fa-clock"></i> Clean UI/UX and responsive design principles</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Under Construction</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <span class="project-btn disabled-btn">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <span>Building Now</span>
+              </span>
+              <span class="project-status-badge in-progress">
+                <i class="fa-solid fa-gear"></i> In Progress
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Formal studies, engineering milestones, and academic foundation</p>
+        </div>
+
+        <div class="education-container">
+          <div class="timeline">
+
+            <!-- Current Degree -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="degree-title">Bachelor of Engineering / B.Tech in CSE</h3>
+                    <h4 class="institution-name">
+                      <!-- Place your University / College Name here -->
+                      [Your University / College Name Here]
+                    </h4>
+                  </div>
+                  <span class="timeline-badge current">Current (2nd Year)</span>
+                </div>
+
+                <div class="degree-meta">
+                  <span><i class="fa-regular fa-calendar"></i> 2024 &ndash; 2028 (Expected)</span>
+                  <span><i class="fa-solid fa-layer-group"></i> <strong>Current:</strong> 2nd Year, 3rd Semester</span>
+                  <span><i class="fa-solid fa-location-dot"></i> [City, State]</span>
+                </div>
+
+                <p class="degree-summary">
+                  Engaged in core undergraduate coursework covering fundamental computing theories, data structures,
+                  object-oriented design paradigms, and computational problem-solving.
+                </p>
+
+                <div class="coursework-section">
+                  <span class="coursework-label">Key Subjects &amp; Coursework:</span>
+                  <div class="coursework-tags">
+                    <span class="course-tag">Data Structures &amp; Algorithms</span>
+                    <span class="course-tag">Object-Oriented Programming (Java / C++)</span>
+                    <span class="course-tag">C Programming Fundamentals</span>
+                    <span class="course-tag">Digital Electronics &amp; Logic Design</span>
+                    <span class="course-tag">Discrete Mathematics</span>
+                    <span class="course-tag">Computer Organization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Previous Education (Pre-University / Intermediate / Higher Secondary) -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="degree-title">Higher Secondary Education (12th Grade / +2)</h3>
+                    <h4 class="institution-name">
+                      <!-- Place your School / Junior College Name here -->
+                      [Your School / Junior College Name Here]
+                    </h4>
+                  </div>
+                  <span class="timeline-badge completed">Completed</span>
+                </div>
+
+                <div class="degree-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Graduated with Science Stream</span>
+                  <span><i class="fa-solid fa-location-dot"></i> [City, State]</span>
+                </div>
+
+                <p class="degree-summary">
+                  Completed senior secondary education with primary focus in Mathematics, Physics, Chemistry,
+                  and Computer Science, establishing analytical and mathematical foundations for engineering.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GITHUB & ACHIEVEMENTS SECTION -->
+    <section class="github-achievements section" id="github-achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Practices &amp; Milestones</span>
+          <h2 class="section-title">GitHub &amp; Achievements</h2>
+          <p class="section-subtitle">Version control proficiency, collaborative practices, and extracurricular milestones</p>
+        </div>
+
+        <div class="git-achievements-wrapper grid">
+          
+          <!-- GitHub & Version Control Card -->
+          <div class="feature-card git-showcase-card">
+            <div class="feature-card-header">
+              <div class="feature-icon github-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div>
+                <h3 class="feature-title">Git &amp; GitHub Experience</h3>
+                <p class="feature-desc">Modern collaboration and version control</p>
+              </div>
+            </div>
+
+            <p class="git-intro-text">
+              Committed to clean development workflows. I regularly use Git and GitHub to manage source code, track
+              revisions, and write meaningful commit histories for my academic and personal projects.
+            </p>
+
+            <!-- Key Git Competencies -->
+            <div class="git-skills-list">
+              <div class="git-skill-item">
+                <i class="fa-solid fa-code-commit git-bullet-icon"></i>
+                <div>
+                  <strong>Branching &amp; Commits:</strong>
+                  <span>Creating feature branches, atomic commits, and merging code cleanly.</span>
+                </div>
+              </div>
+
+              <div class="git-skill-item">
+                <i class="fa-solid fa-code-pull-request git-bullet-icon"></i>
+                <div>
+                  <strong>Pull Requests &amp; Reviews:</strong>
+                  <span>Understanding collaborative review processes and open-source contributions.</span>
+                </div>
+              </div>
+
+              <div class="git-skill-item">
+                <i class="fa-solid fa-magnifying-glass-chart git-bullet-icon"></i>
+                <div>
+                  <strong>VS Code GitLens Extension:</strong>
+                  <span>Using GitLens to inspect code authorship, commit heatmaps, line-by-line blame, and branch navigations.</span>
+                </div>
+              </div>
+
+              <div class="git-skill-item">
+                <i class="fa-solid fa-users git-bullet-icon"></i>
+                <div>
+                  <strong>Collaborative Development:</strong>
+                  <span>Team project coordination, repository organization, and issue tracking.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="git-action-bar">
+              <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i>
+                <span>Visit My GitHub Profile</span>
+              </a>
+              <span class="git-note">Repositories, code commits &amp; open source</span>
+            </div>
+          </div>
+
+          <!-- Achievements & Certifications Card -->
+          <div class="feature-card achievements-card">
+            <div class="feature-card-header">
+              <div class="feature-icon trophy-icon">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <h3 class="feature-title">Certifications &amp; Achievements</h3>
+                <p class="feature-desc">Academic milestones and continuous learning</p>
+              </div>
+            </div>
+
+            <div class="achievements-list">
+
+              <!-- Item 1 -->
+              <div class="achievement-item">
+                <div class="achievement-badge">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="achievement-info">
+                  <h4 class="achievement-title">C / C++ Programming Certification</h4>
+                  <p class="achievement-org">Academic / Online Learning Platform</p>
+                  <p class="achievement-details">Recognized for mastering procedural programming, memory management, pointers, and data manipulation.</p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="achievement-item">
+                <div class="achievement-badge">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="achievement-info">
+                  <h4 class="achievement-title">Technical Workshop &amp; Hackathon Participation</h4>
+                  <p class="achievement-org">College / Department Technical Symposium</p>
+                  <p class="achievement-details">Engaged in hands-on student workshops on web technologies and competitive programming challenges.</p>
+                </div>
+              </div>
+
+              <!-- Item 3: Space for future certificates -->
+              <div class="achievement-item placeholder-item">
+                <div class="achievement-badge">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="achievement-info">
+                  <h4 class="achievement-title">Additional Certifications</h4>
+                  <p class="achievement-org">Currently working on Data Structures &amp; Web Dev certifications</p>
+                  <p class="achievement-details">Actively expanding credentials through ongoing coursework and independent online challenges.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="achievement-tip">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Tip: You can easily add more certificates and badges directly in this section!</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Have a question, collaborative idea, or opportunity? Let's connect!</p>
+        </div>
+
+        <div class="contact-container grid">
+          
+          <!-- Contact Details / Info Cards -->
+          <div class="contact-info-wrap">
+            <h3 class="contact-info-title">Let's build something together</h3>
+            <p class="contact-info-desc">
+              I am open to internship opportunities, student mentorship, peer project collaborations,
+              and discussions about software development and tech.
+            </p>
+
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:dtahareen2008@gmail.com" class="contact-value" id="contact-email">dtahareen2008@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy Email" aria-label="Copy Email Address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-card-text">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-value">
+                    linkedin.com
+                  </a>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="Visit LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-card-text">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" class="contact-value">
+                    github.com/dtahareen2008
+                  </a>
+                </div>
+                <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="Visit GitHub">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- Phone Card (Optional) -->
+              <div class="contact-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Phone (Optional)</span>
+                  <span class="contact-value">+91 XXXXX XXXXX</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Academic Status Badge -->
+            <div class="status-badge-box">
+              <i class="fa-solid fa-user-graduate"></i>
+              <div>
+                <strong>Current Status:</strong>
+                <span>2nd Year (3rd Semester) CSE Student</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form">
+              <h3 class="form-title">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <div class="input-container">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Smith" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <div class="input-container">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-container">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Project Collaboration / Question" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-container textarea-container">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+
+              <!-- Form Response Alert Box -->
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">D. Tahareen</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Computer Science &amp; Engineering Student &bull; 2nd Year, 3rd Semester
+          </p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#github-achievements">GitHub</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-social">
+          <a href="https://github.com/dtahareen2008" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:dtahareen2008@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> <strong>D. Tahareen</strong>. Built with HTML, CSS, and JavaScript.
+        </p>
+        <p class="footer-subtext">
+          Designed with clean code and passion for engineering.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCROLL TO TOP BUTTON ==================== -->
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script src="script.js"></script>
+</body>
+</html>
